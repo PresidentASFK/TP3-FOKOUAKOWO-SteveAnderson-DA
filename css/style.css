@@ -33,3 +33,7 @@ nav ul li a{
     margin: 0px;
     list-style-type: none;
 }
+
+.navHeader{
+    display: flex;
+}
