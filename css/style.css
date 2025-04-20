@@ -2,38 +2,115 @@
     box-sizing: border-box;
 }
 
+/* Container*/
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.manna-header{
-    text-decoration: none;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 20px;
+/*Body*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
 }
 
-.actuel{
-    color: aliceblue;
+main{
+    background-color: whitesmoke;
 }
 
-.actuel:hover{
-    color: antiquewhite;
+main .container{
+    background-color: white;
 }
+
+/* Entête*/
 
 header{
-    background-color: aqua;
+    background-color: rgb(192, 214, 214);
+    padding: 10px 0;
+}
+
+header .container,
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Logo*/
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo a {
+    text-decoration: none;
+    margin-left: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.logo a p {
+	font-size: 28px;
+	margin: 0;
+}
+
+.logo a p {
+	color: white;
+}
+
+.logo a:hover p {
+	color: #1e6bb7;
+}
+
+/*Navigations*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
 nav ul li a{
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
+    color: firebrick;
+    font-size: 18px;
+    text-decoration: none;
 }
 
-.navHeader{
-    display: flex;
+nav ul li a:hover {
+    background-color: #1e6bb7;
+    padding: 10px;
+    border-radius: 5px;
 }
+
+/* Footer*/
+
+footer {
+    background-color: darkkhaki;
+    color:blue;
+    padding: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*.actuel{
+    color: rgb(34, 70, 102);
+}
+
+.actuel:hover{
+    color: rgb(112, 73, 22);
+}*/
+
