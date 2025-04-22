@@ -3,6 +3,7 @@
 }
 
 /* Container*/
+
 .container{
     width: 90%;
     max-width: 1200px;
@@ -12,92 +13,34 @@
 /*Body*/
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: azure;
-}
-
-main{
-    background-color: whitesmoke;
-}
-
-main .container{
     background-color: white;
 }
 
-/* Entête*/
+/* Page et positionnement */
 
-header{
-    background-color: rgb(192, 214, 214);
-    padding: 10px 0;
-}
-
-header .container,
-footer .container {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-/*Logo*/
-
-.logo {
-    display: flex;
-    flex-direction: row;
+main {
+    width: 100%;
 }
 
-.logo a {
-    text-decoration: none;
-    margin-left: 10px;
-    display: flex;
-    align-items: end;
-}
+/*Header / Navigations / Footer */
 
-.logo a p {
-	font-size: 28px;
-	margin: 0;
-}
-
-.logo a p {
-	color: white;
-}
-
-.logo a:hover p {
-	color: #1e6bb7;
-}
-
-/*Navigations*/
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a{
-    color: firebrick;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #1e6bb7;
+header {
+    display: block;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     padding: 10px;
-    border-radius: 5px;
-}
-
-/* Footer*/
-
-footer {
-    background-color: darkkhaki;
-    color:blue;
-    padding: 10px 0;
+    background-color: #333;
+    color: white;
 }
 
 footer a {
@@ -105,12 +48,32 @@ footer a {
     color: white;
 }
 
-
-/*.actuel{
-    color: rgb(34, 70, 102);
+.logo {
+    text-decoration: none;
+    font-size: 4px;
+    color: antiquewhite;
+    max-width: 20px;
 }
 
-.actuel:hover{
-    color: rgb(112, 73, 22);
-}*/
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+header a:hover {
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    background-color: white;
+    padding: 8px 15px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Section / Cartes / Tableaux */
+
 
