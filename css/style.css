@@ -112,13 +112,13 @@ footer a {
     max-width: 400px;
 }
 
-.buttons{
+.buttons-nav{
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.buttons button{
+.buttons-nav button{
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
@@ -127,12 +127,12 @@ footer a {
     transition: all 0.3s ease;
 }
 
-.buttons button:first-child {
+.buttons-nav button:first-child {
     background-color: black;
     color: white;
 }
 
-.buttons button:hover{
+.buttons-nav button:hover{
     transform: scale(1.05s);
 }
 
@@ -179,6 +179,24 @@ footer a {
     font-size: 0.85em;
   }
 
+  .flex-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+  }
+
+  table {
+    width: 100%;
+    text-align: flex-start;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    text-align: left;
+  }
 
 /*IMAGES*/
 
