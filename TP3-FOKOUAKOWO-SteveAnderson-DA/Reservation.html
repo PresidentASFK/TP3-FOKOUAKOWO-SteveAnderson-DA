@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MannaFoods</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imgVideos/7731522-200.png" alt="logo" width="70">
+            </div>
+
+                <nav class="container">
+                    <ul>
+                        <li> <a href="index.html">acceuil</a></li>
+                        <li><a href="Reservation.html">Réservation</a></li>
+                        <li> <a href="Restaurant.html">Réstaurant</a> </li>
+                        <li> <a href="Ma commande.html">Ma commande </a> </li>
+                    </ul>
+    
+            
+
+        </div>
+    </header>
+
+    <main>
+        <section id="">
+            <div class="container">
+                <h1>Réservation</h1>
+
+                <form class="form" action="#" method="post">
+        
+                    <div class="form-group">
+                        <div>
+                            <label for="fullname">Prénom*</label>
+                            <input type="text" id="firstname" required>
+                        </div>
+                        <div>
+                            <label for="fullname">Nom*</label>
+                            <input type="text" id="lastname" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <div>
+                            <label for="phone">Numéro de téléphone*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div>
+                            <label for="email">Adresse courriel*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <div>
+                            <label>Moyen de confirmation de commande*</label><br>
+                            <div class="checkbox">
+                                <div>
+                                    <input type="checkbox" id="call" name="confirmation-method" value="call">
+                                    <label for="call">Appel téléphonique</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="text" name="confirmation-method" value="text">
+                                    <label for="text">Texto</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="email-confirm" name="confirmation-method" value="email">
+                                    <label for="email-confirm">Courriel</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="participants">Nombre de participants (1-4)*</label>
+                            <input type="number" id="participants" name="participants" min="1" max="4" required>
+                        </div>
+                    </div>
+        
+                    <h4>Adresse du lieu</h4>
+        
+                    <div class="form-group">
+                        <div class="">
+                            <label for="address">Adresse*</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div>
+                            <label for="address2">Suite ou appartement (optionnel)</label>
+                            <input type="text" id="address2" name="address2">
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <div>
+                            <label for="city">Ville*</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div>
+                            <label for="postal-code">Code postal*</label>
+                            <input type="text" id="postal-code" name="postal-code" required>
+                        </div>
+                    </div>
+        
+                    <div class="form-group">
+                        <div>
+                            <label for="time">Heure  souhaitée*</label>
+                            <select id="time" name="time" required>
+                                <option value="9:30">9 h 30 à 12 h 00</option>
+                                <option value="13:30">13 h 30 à 16 h 00</option>
+                                <option value="19:30">19 h 30 à 21 h 00</option>
+                                <option value="21:30">21 h 30 à 00 h 00</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="comment">Commentaire supplémentaire</label>
+                            <textarea id="comment" name="comment" maxlength="255" rows="3"></textarea>
+                        </div>
+                    </div>
+        
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">S'inscrire à l’infolettre</label>
+                    </div>
+        
+                    <button type="submit">Confirmation de votre commande</button>
+                </form>
+            </div>
+        </section>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Intégration web 1</p>
+            <p>Cégep Garneau</p>
+            <p>Hiver 2025</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
