@@ -22,7 +22,7 @@
                     <li> <a href="index.html">Accueil</a> </li>
                     <li><a href="Reservation.html">Réservation</a></li>
                     <li> <a href="Restaurant.html">Restaurant</a> </li>
-                    <li> <a href="Ma commande.html">Ma commande </a> </li>
+                    <li> <a href="Ma commande.html" class="specific">Ma commande </a> </li>
                 </ul>
             </nav>
             <div class="menu-mobile-icon">
@@ -35,7 +35,7 @@
         <div class="container">
             <h1>Réservation</h1>
 
-            <form class="form" action="#" method="post">
+            <form class="form" action="confirmation.html" method="post">
 
                 <div class="form-group">
                     <div>
@@ -54,69 +54,53 @@
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                     <div>
-                        <label for="email">Adresse courriel*</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="participants">Nombre de personnes pour le réservation*</label>
+                        <input type="number" id="participants" name="participants" min="1" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div>
-                        <label>Moyen de confirmation de commande*</label><br>
-                        <div class="checkbox">
-                            <div>
-                                <input type="checkbox" id="call" name="confirmation-method" value="call">
-                                <label for="call">Appel téléphonique</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="text" name="confirmation-method" value="text">
-                                <label for="text">Texto</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="email-confirm" name="confirmation-method" value="email">
-                                <label for="email-confirm">Courriel</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="participants">Nombre de participants (1-4)*</label>
-                        <input type="number" id="participants" name="participants" min="1" max="4" required>
-                    </div>
-                </div>
-
-                <h4>Adresse du lieu</h4>
-
-                <div class="form-group">
-                    <div class="">
-                        <label for="address">Adresse*</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div>
-                        <label for="address2">Suite ou appartement (optionnel)</label>
-                        <input type="text" id="address2" name="address2">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div>
-                        <label for="city">Ville*</label>
-                        <input type="text" id="city" name="city" required>
-                    </div>
-                    <div>
-                        <label for="postal-code">Code postal*</label>
-                        <input type="text" id="postal-code" name="postal-code" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <div>
-                        <label for="time">Heure souhaitée*</label>
-                        <select id="time" name="time" required>
-                            <option value="9:30">9 h 30 à 12 h 00</option>
-                            <option value="13:30">13 h 30 à 16 h 00</option>
-                            <option value="19:30">19 h 30 à 21 h 00</option>
-                            <option value="21:30">21 h 30 à 00 h 00</option>
+                        <label>Lieu de la réservation</label><br>
+                        <select id="lieu" name="lieu" required>
+                            <option value="salle">Salle à manger</option>
+                            <option value="terrasse">Terrasse</option>
                         </select>
                     </div>
+                    <div>
+                        <label for="participants">Date de la réservation</label>
+                        <input type="date" id="date" name="date" min="1" max="4" required>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div>
+                        <label for="time">Heure de la réservation*</label>
+                        <select id="time" name="time" required>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:00">13:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">Adresse courriel</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <div class="form-group">                    
                     <div>
                         <label for="comment">Commentaire supplémentaire</label>
                         <textarea id="comment" name="comment" maxlength="255" rows="3"></textarea>
@@ -128,7 +112,7 @@
                     <label for="newsletter">S'inscrire à l’infolettre</label>
                 </div>
 
-                <button type="submit">Confirmation de votre commande</button>
+                <button type="submit">Reservation</button>
             </form>
         </div>
     </main>
@@ -137,15 +121,15 @@
         <div class="container">
             <div class="footer">
                 <div class="left">
-                    <p>📧 Réalisé par : STEVE ANDERSON FOKOUA KOWO</p>
+                    <img src="imgVideos/gmail.png" alt="" width="30px"><p> Réalisé par : STEVE ANDERSON FOKOUA KOWO</p>
                 </div>
                 <div class="right">
                     <p>Réseaux sociaux : </p>
                     <span class="socials">
-                        <i>📘</i>
-                        <i>💼</i>
-                        <i>🐦</i>
-                        <i>📸</i>
+                        <i><img src="imgVideos/facebook.png" alt="" width="30px"></i>
+                        <i><img src="imgVideos/linkedin.png" alt="" width="30px"></i>
+                        <i><img src="imgVideos/twitter.png" alt="" width="30px"></i>
+                        <i><img src="imgVideos/instagram.png" alt="" width="30px"></i>
                     </span>
                 </div>
             </div>

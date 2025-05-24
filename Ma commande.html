@@ -17,81 +17,89 @@
                 <img src="imgVideos/7731522-200.png" alt="logo" width="70">
             </div>
 
-            <nav class="container">
+            <nav class="menu">
                 <ul>
-                    <li> <a href="index.html">accueil</a></li>
+                    <li> <a href="index.html">Accueil</a> </li>
                     <li><a href="Reservation.html">Réservation</a></li>
-                    <li> <a href="Restaurant.html">Réstaurant</a> </li>
-                    <li> <a href="Ma commande.html">Ma commande </a> </li>
+                    <li> <a href="Restaurant.html">Restaurant</a> </li>
+                    <li> <a href="Ma commande.html" class="specific">Ma commande </a> </li>
                 </ul>
-
-
-
+            </nav>
+            <div class="menu-mobile-icon">
+                &#9776;
+            </div>
         </div>
     </header>
 
     <main>
-        <section>
-            <div class="maCommande container">
-                <h1>Ma commande</h1>
+        <div class="container">
+            <h1>Ma commande</h1>
 
+            <div class="commande">
                 <div class="macommande-wrapper">
-                    <div class="grid-item item1">
-                        <h3>Entrées</h3>
+                    <section class="menu-section">
+                        <h2>Entrées</h2>
                         <table>
-                            <tr>
-                                <th>Nom du plat</th>
-                                <th>Prix</th>
-                                <th>Quantité</th>
-                            </tr>
-
-                            <tr>
-                                <td>Le soya</td>
-                                <td>5.99 $</td>
-                                <td> 1 </td>
-                            </tr>
-
-                            <tr>
-                                <td>Taro sauce jaune</td>
-                                <td>24.99 $</td>
-                                <td>1</td>
-                            </tr>
-
-                            <tr>
-                                <td>Pain porc</td>
-                                <td>24.99 $</td>
-                                <td>2</td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Nom du plat</th>
+                                    <th>Prix</th>
+                                    <th>Quantité</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Soya</td>
+                                    <td>5.99 $</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Taro sauce jaune</td>
+                                    <td>15.99$</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Pain porc</td>
+                                    <td>8.99$</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    </section>
 
-                        <h3>Plats principaux</h3>
+                    <section class="menu-section">
+                        <h2>Plats principaux</h2>
                         <table>
-                            <tr>
-                                <th>Nom du plats</th>
-                                <th>Prix</th>
-                                <th>Quantité</th>
-                            </tr>
-
-                            <tr>
-                                <td>Poulet braisé</td>
-                                <td>24.99 $</td>
-                                <td>1</td>
-                            </tr>
-
-                            <tr>
-                                <td>Kondre de porc</td>
-                                <td>28.99 $</td>
-                                <td>1</td>
-                            </tr>
-
-                            <tr>
-                                <td>Nfiang owondo</td>
-                                <td>32.99 $</td>
-                                <td>2</td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Nom du plat</th>
+                                    <th>Prix</th>
+                                    <th>Quantité</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Poulet braisé</td>
+                                    <td>5.00 $</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Kondre</td>
+                                    <td>28.99</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Nfiang owondo</td>
+                                    <td>32.99</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    </section>
 
-                        <h3>Autre</h3>
+                    <section class="menu-section">
+
+                        <h2>Autre</h2>
 
                         <table>
                             <tr>
@@ -107,26 +115,44 @@
                             </tr>
                         </table>
 
-                    </div>
+                    </section>
 
                 </div>
-            </div>
 
-        </section>
+                <div class="details-box">
+                    <h2>Détails</h2>
+                    <div class="line-item">
+                        <span><strong>Sous-total :</strong></span>
+                        <span>29,96$</span>
+                    </div>
+                    <div class="line-item">
+                        <span><strong>Taxes :</strong></span>
+                        <span>4,49$</span>
+                    </div>
+                    <hr>
+                    <div class="line-item total">
+                        <span>Total :</span>
+                        <span>34,45$</span>
+                    </div>
+                    <button class="order-button">Commander</button>
+                </div>
+            </div>
+        </div>
     </main>
- <footer>
+
+    <footer>
         <div class="container">
             <div class="footer">
                 <div class="left">
-                    <p>📧 Réalisé par : STEVE ANDERSON FOKOUA KOWO</p>
+                    <img src="imgVideos/gmail.png" alt="" width="30px"><p> Réalisé par : STEVE ANDERSON FOKOUA KOWO</p>
                 </div>
                 <div class="right">
                     <p>Réseaux sociaux : </p>
                     <span class="socials">
-                        <i>📘</i>
-                        <i>💼</i>
-                        <i>🐦</i>
-                        <i>📸</i>
+                        <i><img src="imgVideos/facebook.png" alt="" width="30px"></i>
+                        <i><img src="imgVideos/linkedin.png" alt="" width="30px"></i>
+                        <i><img src="imgVideos/twitter.png" alt="" width="30px"></i>
+                        <i><img src="imgVideos/instagram.png" alt="" width="30px"></i>
                     </span>
                 </div>
             </div>
