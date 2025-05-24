@@ -30,6 +30,9 @@ h1 {
 }
 
 /* Page et positionnement */
+
+
+
 /*Header / Navigations / Footer */
 
 header {
@@ -425,12 +428,12 @@ button[type="submit"]:hover {
   text-decoration: underline;
 }
 
-.contact .contact-map{
+.contact .contact-map {
   width: 45%;
   height: 100%;
 }
 
-.contact iframe{
+.contact iframe {
   height: 100%;
   width: 100%;
 }
@@ -520,6 +523,7 @@ hr {
 .confirmation{
   height: 68vh;
 }
+
 
 /* === MEDIA QUERIES RESPONSIVE === */
 
@@ -630,7 +634,7 @@ hr {
     flex-direction: column;
   }
 
-  .contact-info{
+  .contact-info {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -642,12 +646,12 @@ hr {
     margin-bottom: 0px;
   }
 
-  .contact .contact-map{
+  .contact .contact-map {
     width: 100%;
     height: 100%;
   }
 
-    .commande {
+  .commande {
     flex-direction: column;
   }
 
@@ -719,10 +723,10 @@ hr {
     grid-column: span 1;
     grid-row: span 1;
   }
-  
-  .contact-info{
+
+  .contact-info {
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto 0;
   }
@@ -730,5 +734,6 @@ hr {
   .contact-info .info-block {
     margin-bottom: 50px;
   }
-  
+
+
 }
